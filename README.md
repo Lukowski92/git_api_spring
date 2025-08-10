@@ -22,4 +22,4 @@ A Spring Boot 3.5 application that fetches all **non-fork** repositories for a g
  - Build and run with mvn (mvn spring-boot:run)
    
 ## Running Tests
- -The project contains one integration test (GitApiIntegrationTests) it verifies that the API correctly fetches and returns repositories with branches for a valid GitHub user.
+ - Project contains one integration test (GitApiIntegrationTests) it verifies that the API correctly fetches and returns repositories with branches for a valid GitHub user.
