@@ -1,14 +1,12 @@
-package pl.kalinowski.github_api_repo.service;
+package pl.kalinowski.github_api_repo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record GitResponse(
+public record BranchResponse(
         String name,
-        boolean fork,
-        Owner owner
+        Commit commit
 ) {
     @JsonIgnoreProperties(ignoreUnknown = true)
-    public record Owner(String login) {
-    }
+    public record Commit(String sha) {}
 }
